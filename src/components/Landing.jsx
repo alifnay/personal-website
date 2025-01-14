@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 const Landing = () => {
     return (
         <div className='max-w-7xl mx-auto mt-36 grid md:grid-cols-2 '>
-            <div>
+            <div className='pl-16'>
                 <h3 className='text-[#707070] font-semibold text-lg'>Hi, I am</h3>
                 <h2 className='text-[#959595] font-semibold text-2xl'>Alif Naywa Azzikra</h2>
                 <h1 className='text-6xl pt-12 font-bold bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent'>Web Developer</h1>
@@ -18,6 +18,9 @@ const Landing = () => {
                     </div>
                     <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <SiGmail size={20} />
+                    </div>
+                    <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
+                        <FaGithub size={20} />
                     </div>
                 </div>
                 <div className='flex space-x-4 pt-12'>
