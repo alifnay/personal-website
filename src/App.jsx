@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
                 <Navbar />
                 {/* Landing */}
                 <Landing />
+                {/* Skills */}
+                <Skills />
             </div>
         </>
     )
