@@ -6,9 +6,9 @@ const Landing = () => {
     return (
         <div className='max-w-7xl mx-auto mt-36 grid md:grid-cols-2 '>
             <div>
-                <div className='text-[#707070] font-semibold text-lg'>Hi, I am</div>
-                <div className='text-[#959595] font-semibold text-2xl'>Alif Naywa Azzikra</div>
-                <div className='text-6xl pt-12 font-bold bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent'>Web Developer</div>
+                <h3 className='text-[#707070] font-semibold text-lg'>Hi, I am</h3>
+                <h2 className='text-[#959595] font-semibold text-2xl'>Alif Naywa Azzikra</h2>
+                <h1 className='text-6xl pt-12 font-bold bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent'>Web Developer</h1>
                 <div className="flex space-x-4 pt-12">
                     <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <FaInstagram size={20} />
