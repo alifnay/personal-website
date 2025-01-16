@@ -4,12 +4,13 @@ import Landing from './components/Landing';
 import Skills from './components/Skills';
 import About from './components/About';
 import Works from './components/Works';
+import Footer from './components/Footer';
 
 function App() {
 
     return (
         <>
-            <div className="bg-black text-white min-h-screen py-8"> 
+            <div className="bg-black text-white min-h-screen pt-8"> 
                 {/* Navbar */}
                 <Navbar />
                 {/* Landing */}
@@ -20,6 +21,8 @@ function App() {
                 <About />
                 {/* About */}
                 <Works />
+                {/* About */}
+                <Footer />
             </div>
         </>
     )
