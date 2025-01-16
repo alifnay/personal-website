@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Landing from './components/Landing';
 import Skills from './components/Skills';
 import About from './components/About';
+import Works from './components/Works';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
                 <Skills />
                 {/* About */}
                 <About />
+                {/* About */}
+                <Works />
             </div>
         </>
     )
