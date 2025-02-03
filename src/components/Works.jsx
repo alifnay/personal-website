@@ -15,11 +15,26 @@ const Works = () => {
                         <h2 className='text-[#959595]'>Android</h2>
                     </div>
                 </div>
-                <div className='h-[480px] bg-[#262626] rounded-lg'>
-                    
+                <div className="h-[480px] bg-[#262626] rounded-lg overflow-hidden flex flex-col">
+                    <img src="/smartcorn.png" className="w-full h-full object-cover" alt="Digi Skill" />
+                    <div className="flex justify-between items-center h-16 px-4 bg-[#1f1f1f] text-lg text-[#C6C6C6]">
+                        <h2>SmartCorn</h2>
+                        <h2 className='text-[#959595]'>Website</h2>
+                    </div>
                 </div>
-                <div className='h-[480px] bg-[#262626] rounded-lg'>
-                    
+                <div className="h-[480px] bg-[#262626] rounded-lg overflow-hidden flex flex-col">
+                    <img src="/ecommerce.png" className="w-full h-full object-cover" alt="Digi Skill" />
+                    <div className="flex justify-between items-center h-16 px-4 bg-[#1f1f1f] text-lg text-[#C6C6C6]">
+                        <h2>E-Commerce</h2>
+                        <h2 className='text-[#959595]'>UI/UX</h2>
+                    </div>
+                </div>
+                <div className="h-[480px] bg-[#262626] rounded-lg overflow-hidden flex flex-col">
+                    <img src="/twt-sentiment.png" className="w-full h-full object-cover" alt="Digi Skill" />
+                    <div className="flex justify-between items-center h-16 px-4 bg-[#1f1f1f] text-lg text-[#C6C6C6]">
+                        <h2>Twitter Sentiment Analysis</h2>
+                        <h2 className='text-[#959595]'>Streamlit</h2>
+                    </div>
                 </div>
             </div>
         </div>
