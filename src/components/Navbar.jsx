@@ -1,16 +1,31 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MdOutlineLightMode, MdOutlineDarkMode  } from "react-icons/md";
 
 function Navbar() {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(true);
 
-    const toggleMode = () => {
-        setIsDarkMode(!isDarkMode);
-        if (!isDarkMode) {
-            document.documentElement.classList.add('dark');
+    // Saat pertama kali website dimuat, cek preferensi di localStorage
+    useEffect(() => {
+        const savedMode = localStorage.getItem("theme");
+        if (savedMode === "light") {
+            setIsDarkMode(false);
+            document.documentElement.classList.remove("dark");
         } else {
-            document.documentElement.classList.remove('dark');
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
         }
+    }, []);
+
+    // Fungsi Toggle Dark Mode
+    const toggleMode = () => {
+        if (isDarkMode) {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+        } else {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        }
+        setIsDarkMode(!isDarkMode);
     };
 
     return (
@@ -18,7 +33,7 @@ function Navbar() {
             <div className="max-w-7xl mx-auto grid grid-cols-5 items-center">
                 <div>
                     <div className="text-2xl font-bold bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent">
-                    Alif
+                    ALIF
                     </div>
                 </div>
                 <div className="col-span-3 flex justify-center space-x-20">
