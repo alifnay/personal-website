@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub, FaPhoneAlt  } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                     <div className="text-[#949494] hover:text-[#FD6F00] cursor-pointer">Portfolio</div>
                     <div className="text-[#949494] hover:text-[#FD6F00] cursor-pointer">Contact Me</div>
             </div>
-            <div className="flex gap-3 pt-8 justify-center">
+            <div className="flex gap-3 py-8 justify-center">
                 <div className="border border-gray-400 rounded-full p-2 hover:border-gray-600 transition-all cursor-pointer">
                     <FaInstagram size={16} />
                 </div>
@@ -28,6 +29,17 @@ const Footer = () => {
                     <FaGithub size={16} />
                 </div>
             </div>
+            <div className="flex gap-16 justify-center">
+                <div className='flex items-center gap-2'>
+                    <CiMail size={20} color='#949494'/>
+                    <h3 className="items-center text-[#949494]">naywaalif@gmail.com</h3>
+                </div>
+                <div className='flex items-center gap-2'>
+                    <FaPhoneAlt size={16} color='#949494'/>
+                    <h3 className="items-center text-[#949494]">+62 856-4715-2578</h3>
+                </div>
+            </div>
+
         </div>
     )
 }
