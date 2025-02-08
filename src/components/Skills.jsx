@@ -3,10 +3,18 @@ import { FaAndroid, FaPython, FaJava, FaHtml5, FaPhp, FaJs, FaReact } from "reac
 import { TbBrandKotlin } from "react-icons/tb";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { SiMysql, SiTensorflow } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Skills = () => {
     return (
-        <div className='max-w-7xl mx-auto pt-12'>
+        <motion.div
+            className="py-20"
+            initial={{ opacity: 0, y: 50, scale: 0.9 }} // Mulai dengan opacity 0, sedikit ke bawah & kecil
+            whileInView={{ opacity: 1, y: 0, scale: 1 }} // Fade-in, geser ke atas, dan zoom normal
+            transition={{ duration: 0.8, ease: "easeOut" }} // Durasi lebih lama & easing smooth
+            viewport={{ once: true, amount: 0.2 }} // Muncul saat 20% viewport
+        > 
+                <div className='max-w-7xl mx-auto pt-12'>
             <h2 className='text-2xl font-semibold text-center'>
                 Skills
             </h2>
@@ -86,6 +94,7 @@ const Skills = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
     )
 }
 

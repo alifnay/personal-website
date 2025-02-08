@@ -1,7 +1,15 @@
 import React from 'react'
+import { motion } from "framer-motion";
 
 const About = () => {
     return (
+        <motion.div
+            className="py-20"
+            initial={{ opacity: 0, y: 50, scale: 0.9 }} // Mulai dengan opacity 0, sedikit ke bawah & kecil
+            whileInView={{ opacity: 1, y: 0, scale: 1 }} // Fade-in, geser ke atas, dan zoom normal
+            transition={{ duration: 0.8, ease: "easeOut" }} // Durasi lebih lama & easing smooth
+            viewport={{ once: true, amount: 0.2 }} // Muncul saat 20% viewport
+        > 
         <div className='max-w-7xl mx-auto mt-36'>
             <h2 className='text-2xl font-semibold text-center mb-24'>
                 About Me
@@ -28,6 +36,7 @@ const About = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
     )
 }
 
