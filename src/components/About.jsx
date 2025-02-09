@@ -16,7 +16,7 @@ const About = () => {
             </h2>
             <div className='grid grid-cols-2 space-x-4 '>
                 <div className="flex justify-center relative">
-                    <div className="w-72 h-[24rem] bg-[#383838] rounded-t-full absolute z-0" />
+                    <div className="w-72 h-[24rem] bg-[#FD6F00] rounded-t-full absolute z-0" />
                     <img 
                     src="/about-me.png" 
                     alt="Profile" 

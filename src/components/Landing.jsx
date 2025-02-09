@@ -18,7 +18,7 @@ const Landing = () => {
 
     return (
         <div className='max-w-7xl mx-auto mt-36 grid md:grid-cols-2 '>
-            <div className='pl-16'>
+            <div className='pl-16 drop-shadow-md'>
                 <h3 className='text-[#707070] font-semibold text-lg'>Hi, I am</h3>
                 <h2 className='text-[#959595] font-semibold text-2xl'>Alif Naywa Azzikra</h2>
                 <h1 className='text-5xl py-12 font-bold bg-gradient-to-r from-[#984300] via-[#FD6F00] to-[#CA5900] bg-clip-text text-transparent'>
@@ -29,7 +29,7 @@ const Landing = () => {
                         cursorColor="#FD6F00"
                     />
                 </h1>
-                <div className="flex space-x-4 ">
+                <div className="flex space-x-4 drop-shadow-md">
                     <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <FaInstagram size={20} />
                     </div>
@@ -43,7 +43,7 @@ const Landing = () => {
                         <FaGithub size={20} />
                     </div>
                 </div>
-                <div className='flex space-x-4 pt-12'>
+                <div className='flex space-x-4 pt-12 drop-shadow-lg'>
                     <button className="bg-[#FD6F00] py-3 px-10 rounded-lg text-white hover:bg-[#E55C00] transition-all duration-300 text-sm font-semibold">
                         Hire Me
                     </button>
@@ -53,7 +53,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className="flex justify-center relative">
-                <div className="w-72 h-72 bg-[#575757] rounded-full absolute" />
+                <div className="w-72 h-72 bg-[#FD6F00] rounded-full absolute" />
                 <img src="/profile-image.png" alt="Profile" className="size-9/12 object-cover z-10" />
             </div>
         </div>
