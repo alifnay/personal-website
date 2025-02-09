@@ -30,26 +30,34 @@ const Landing = () => {
                     />
                 </h1>
                 <div className="flex space-x-4 drop-shadow-md">
-                    <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
+                    <a href='https://www.instagram.com/alifnaywa_/' target="_blank" rel="noopener noreferrer" 
+                    className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <FaInstagram size={20} />
-                    </div>
-                    <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
+                    </a>
+                    <a href='https://www.linkedin.com/in/alif-naywa-azzikra/' target="_blank" rel="noopener noreferrer" 
+                    className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <FaLinkedin size={20} />
-                    </div>
-                    <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
+                    </a>
+                    <a href='mailto:naywaalif@gmail.com' target="_blank" rel="noopener noreferrer" 
+                    className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <SiGmail size={20} />
-                    </div>
-                    <div className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
+                    </a>
+                    <a href='https://github.com/alifnay' target="_blank" rel="noopener noreferrer" 
+                    className="border border-gray-400 rounded-full p-3 hover:border-gray-600 transition-all cursor-pointer">
                         <FaGithub size={20} />
-                    </div>
+                    </a>
                 </div>
                 <div className='flex space-x-4 pt-12 drop-shadow-lg'>
-                    <button className="bg-[#FD6F00] py-3 px-10 rounded-lg text-white hover:bg-[#E55C00] transition-all duration-300 text-sm font-semibold">
-                        Hire Me
-                    </button>
-                    <button className="border border-[#959595] py-3 px-10 rounded-lg transition-all hover:bg-[#959595] hover:text-white">
-                        Download CV
-                    </button>
+                    <a href="mailto:naywaalif@gmail.com">
+                        <button className="bg-[#FD6F00] h-12 py-3 px-10 rounded-lg text-white hover:bg-[#E55C00] transition-all duration-300 text-sm font-semibold">
+                            Hire Me
+                        </button>
+                    </a>
+                    <a href="public\files\CV_AlifNaywa.pdf" download="CV_AlifNaywa.pdf">
+                        <button className="border border-[#959595] h-12 py-3 px-10 rounded-lg transition-all hover:bg-[#959595] hover:text-white">
+                            Download CV
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="flex justify-center relative">

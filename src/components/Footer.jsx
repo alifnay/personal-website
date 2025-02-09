@@ -16,16 +16,20 @@ const Footer = () => {
                     <div className="text-[#949494] hover:text-[#FD6F00] dark:hover:text-[#FD6F00] cursor-pointer">Contact Me</div>
             </div>
             <div className="drop-shadow-md flex gap-3 py-8 justify-center">
-                <a href="" className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
+                <a href="https://www.instagram.com/alifnaywa_/" target="_blank" rel="noopener noreferrer" 
+                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
                     <FaInstagram size={16} />
                 </a>
-                <a href="" className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
+                <a href="https://www.linkedin.com/in/alif-naywa-azzikra/" target="_blank" rel="noopener noreferrer" 
+                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
                     <FaLinkedin size={16} />
                 </a>
-                <a href="" className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
+                <a href="mailto:naywaalif@gmail.com" target="_blank" rel="noopener noreferrer" 
+                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
                     <SiGmail size={16} />
                 </a>
-                <a href="" className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
+                <a href="https://github.com/alifnay" target="_blank" rel="noopener noreferrer" 
+                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
                     <FaGithub size={16} />
                 </a>
             </div>

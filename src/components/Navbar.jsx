@@ -37,10 +37,22 @@ function Navbar() {
                     </div>
                 </div>
                 <div className="col-span-3 flex justify-center space-x-20">
-                    <div className="text-[#FD6F00] cursor-pointer">Home</div>
-                    <div className="hover:text-[#FD6F00] cursor-pointer">About Me</div>
-                    <div className="hover:text-[#FD6F00] cursor-pointer">Portfolio</div>
-                    <div className="hover:text-[#FD6F00] cursor-pointer">Contact Me</div>
+                    <div className="text-[#FD6F00] cursor-pointer relative group">
+                        Home
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#FD6F00] transition-all duration-300 group-hover:w-full"></span>
+                    </div>
+                    <div className="hover:text-[#FD6F00] cursor-pointer relative group">
+                        About Me
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#FD6F00] transition-all duration-300 group-hover:w-full"></span>
+                    </div>
+                    <div className="hover:text-[#FD6F00] cursor-pointer relative group">
+                        Portfolio
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#FD6F00] transition-all duration-300 group-hover:w-full"></span>
+                    </div>
+                    <div className="hover:text-[#FD6F00] cursor-pointer relative group">
+                        Contact Me
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#FD6F00] transition-all duration-300 group-hover:w-full"></span>
+                    </div>
                 </div>
                 <div className="flex justify-end items-center">
                     {/* Toggle Button */}
