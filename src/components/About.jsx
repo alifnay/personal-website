@@ -20,7 +20,7 @@ const About = () => {
                     <img 
                     src="/about-me.png" 
                     alt="Profile" 
-                    className="h-[28rem] w-auto object-cover z-10 relative" 
+                    className="h-[28rem] w-auto object-cover z-10 relative drop-shadow-xl" 
                     />
                 </div>
                 <div className='py-4'>

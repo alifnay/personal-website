@@ -54,7 +54,7 @@ const Landing = () => {
             </div>
             <div className="flex justify-center relative">
                 <div className="w-72 h-72 bg-[#FD6F00] rounded-full absolute" />
-                <img src="/profile-image.png" alt="Profile" className="size-9/12 object-cover z-10" />
+                <img src="/profile-image.png" alt="Profile" className="size-9/12 object-cover z-10 drop-shadow-xl" />
             </div>
         </div>
     );
