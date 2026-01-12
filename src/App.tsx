@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import Navbar from './components/Navbar';
-import Landing from './components/Landing';
-import Skills from './components/Skills';
-import About from './components/About';
-import Works from './components/Works';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.js';
+import Landing from './components/Landing.js';
+import Skills from './components/Skills.js';
+import About from './components/About.js';
+import Works from './components/Works.js';
+import Footer from './components/Footer.js';
 
 function App() {
 

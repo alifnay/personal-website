@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
