@@ -1,48 +1,96 @@
-import { FaInstagram, FaLinkedin, FaGithub, FaPhoneAlt  } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { CiMail } from "react-icons/ci";
+
+const SOCIAL_LINKS = [
+    { 
+        icon: <FaInstagram size={20} />, 
+        href: "https://www.instagram.com/alifnaywa_/", 
+        label: "Instagram" 
+    },
+    { 
+        icon: <FaLinkedin size={20} />, 
+        href: "https://www.linkedin.com/in/alif-naywa-azzikra/", 
+        label: "LinkedIn" 
+    },
+    { 
+        icon: <SiGmail size={20} />, 
+        href: "mailto:naywaalif@gmail.com", 
+        label: "Email" 
+    },
+    { 
+        icon: <FaGithub size={20} />, 
+        href: "https://github.com/alifnay", 
+        label: "GitHub" 
+    },
+];
+
+const NAV_LINKS = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Works", href: "#works" }, 
+    { name: "Contact", href: "mailto:naywaalif@gmail.com" },
+];
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <div className='bg-[#f8f9fa] dark:bg-[#1c1c1c] mt-36'>
-            <h1 className='drop-shadow-md text-center text-2xl font-bold bg-gradient-to-r from-[#FA6E00] to-[#E60026] bg-clip-text text-transparent py-10'>
-                ALIF
-            </h1>
-            <div className="drop-shadow-md col-span-3 flex justify-center space-x-20">
-                    <div className="text-[#949494] hover:text-[#FD6F00] dark:hover:text-[#FD6F00] cursor-pointer">Home</div>
-                    <div className="text-[#949494] hover:text-[#FD6F00] dark:hover:text-[#FD6F00] cursor-pointer">About Me</div>
-                    <div className="text-[#949494] hover:text-[#FD6F00] dark:hover:text-[#FD6F00] cursor-pointer">Portfolio</div>
-                    <div className="text-[#949494] hover:text-[#FD6F00] dark:hover:text-[#FD6F00] cursor-pointer">Contact Me</div>
-            </div>
-            <div className="drop-shadow-md flex gap-3 py-8 justify-center">
-                <a href="https://www.instagram.com/alifnaywa_/" target="_blank" rel="noopener noreferrer" 
-                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
-                    <FaInstagram size={16} />
-                </a>
-                <a href="https://www.linkedin.com/in/alif-naywa-azzikra/" target="_blank" rel="noopener noreferrer" 
-                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
-                    <FaLinkedin size={16} />
-                </a>
-                <a href="mailto:naywaalif@gmail.com" target="_blank" rel="noopener noreferrer" 
-                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
-                    <SiGmail size={16} />
-                </a>
-                <a href="https://github.com/alifnay" target="_blank" rel="noopener noreferrer" 
-                className="border border-gray-400 rounded-full p-2 hover:border-gray-600 dark:hover:border-gray-600 transition-all cursor-pointer">
-                    <FaGithub size={16} />
-                </a>
-            </div>
-            <div className="drop-shadow-md flex gap-16 justify-center pb-16">
-                <div className='flex items-center gap-2'>
-                    <CiMail size={20} color='#949494'/>
-                    <h3 className="items-center text-[#949494]">naywaalif@gmail.com</h3>
+        <footer className="relative bg-white/50 dark:bg-[#050505]/50 backdrop-blur-md border-t border-gray-200 dark:border-gray-800 mt-20 pt-16 pb-8">
+            <div className="max-w-7xl mx-auto px-6 sm:px-12">
+                
+                <div className="flex flex-col md:flex-row justify-between items-center gap-10 mb-12">
+                    
+                    {/* 1. BRAND & TAGLINE */}
+                    <div className="text-center md:text-left">
+                        <a href="#home" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center justify-center md:justify-start gap-1 mb-2">
+                            ALIF
+                            <span className="w-2 h-2 rounded-full bg-[#FD6F00]"></span>
+                        </a>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
+                            Building digital experiences with modern technologies and intelligent systems.
+                        </p>
+                    </div>
+
+                    {/* 2. QUICK NAVIGATION */}
+                    <div className="flex gap-8">
+                        {NAV_LINKS.map((link) => (
+                            <a 
+                                key={link.name}
+                                href={link.href}
+                                className="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-[#FD6F00] dark:hover:text-[#FD6F00] transition-colors"
+                            >
+                                {link.name}
+                            </a>
+                        ))}
+                    </div>
+
+                    {/* 3. SOCIALS */}
+                    <div className="flex gap-4">
+                        {SOCIAL_LINKS.map((social, index) => (
+                            <a 
+                                key={index}
+                                href={social.href} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label={social.label}
+                                className="p-2 bg-gray-100 dark:bg-[#1a1a1a] text-gray-600 dark:text-gray-400 rounded-lg dark:hover:bg-[#FD6F00] hover:bg-[#FD6F00] dark:hover:text-white hover:text-white transition-all duration-300"
+                            >
+                                {social.icon}
+                            </a>
+                        ))}
+                    </div>
                 </div>
-                <div className='flex items-center gap-2'>
-                    <FaPhoneAlt size={16} color='#949494'/>
-                    <h3 className="items-center text-[#949494]">+62 856-4715-2578</h3>
+
+                {/* 4. COPYRIGHT & CREDIT */}
+                <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-500">
+                    
+                    <p>
+                        &copy; {currentYear} Alif Naywa Azzikra. All rights reserved.
+                    </p>
+
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
