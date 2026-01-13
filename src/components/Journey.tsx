@@ -7,7 +7,7 @@ const EXPERIENCE = [
     {
         role: "Intern - PRQ Division",
         company: "Telkom Indonesia (Witel Yogya Jateng Selatan)",
-        period: "Jan 2026 - Present",
+        period: "Dec 2025 - Present",
         desc: "Managing performance risk & quality assurance for enterprise projects.",
         icon: <FaBriefcase />,
     },
