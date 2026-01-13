@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiFolder, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const PROJECTS = [
@@ -10,8 +10,7 @@ const PROJECTS = [
         description: "A personalized mental health companion app that uses AI to analyze mood patterns and provide tailored meditation & journaling prompts.",
         techStack: ["Kotlin", "AI", "LLM", "NLP", "Firebase"],
         image: "/mindgarden.png",
-        githubLink: "https://github.com/alifnay",
-        demoLink: "#"
+        githubLink: "https://github.com/MindGardenApp"
     },
     {
         title: "Digi Skill",
@@ -19,8 +18,7 @@ const PROJECTS = [
         description: "Android application designed to improve digital literacy skills with interactive modules.",
         techStack: ["Kotlin", "Android XML", "Firebase"],
         image: "/digi-skill.png",
-        githubLink: "https://github.com/alifnay",
-        demoLink: "#"
+        githubLink: "https://github.com/alifnay/digi-skill",
     },
     {
         title: "SmartCorn",
@@ -28,8 +26,7 @@ const PROJECTS = [
         description: "Intelligent plant disease detection system using Convolutional Neural Networks (CNN) to diagnose corn leaf health from images.",
         techStack: ["React", "CNN", "TensorFlow", "Tailwind"],
         image: "/smartcorn.png",
-        githubLink: "https://github.com/alifnay",
-        demoLink: "#"
+        githubLink: "https://github.com/alifnay/corn_leaf_disease"
     },
     {
         title: "E-Commerce Design",
@@ -37,8 +34,7 @@ const PROJECTS = [
         description: "Modern and user-friendly interface design for a fashion marketplace application.",
         techStack: ["Figma", "Prototyping", "User Research"],
         image: "/ecommerce.png",
-        githubLink: "https://github.com/alifnay",
-        demoLink: "#"
+        githubLink: "https://github.com/alifnay"
     },
     {
         title: "Twitter Sentiment",
@@ -46,8 +42,7 @@ const PROJECTS = [
         description: "Machine learning model to analyze public sentiment on Twitter regarding specific trends.",
         techStack: ["Python", "Streamlit", "Scikit-Learn"],
         image: "/twt-sentiment.png",
-        githubLink: "https://github.com/alifnay",
-        demoLink: "#"
+        githubLink: "https://github.com/alifnay/text_sentiment"
     },
 ];
 
@@ -167,9 +162,6 @@ const Works = () => {
                                                 <div className="flex gap-4">
                                                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#FD6F00] transition-colors relative z-50">
                                                         <FaGithub size={20} />
-                                                    </a>
-                                                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-[#FD6F00] transition-colors relative z-50">
-                                                        <FaExternalLinkAlt size={18} />
                                                     </a>
                                                 </div>
                                             </div>
