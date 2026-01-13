@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar.js';
-import Landing from './components/Landing.js';
-import Skills from './components/Skills.js';
-import About from './components/About.js';
-import Works from './components/Works.js';
-import Footer from './components/Footer.js';
-import Journey from "./components/Journey";
+import Navbar from './components/Navbar.tsx';
+import Landing from './components/Landing.tsx';
+import Skills from './components/Skills.tsx';
+import About from './components/About.tsx';
+import Works from './components/Works.tsx';
+import Footer from './components/Footer.tsx';
+import Journey from "./components/Journey.tsx";
 
 function App() {
 

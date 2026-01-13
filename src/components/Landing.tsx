@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const SOCIALS = [
     { icon: <FaInstagram size={20} />, href: "https://www.instagram.com/alifnaywa_/", label: "Instagram" },
-    { icon: <FaLinkedin size={20} />, href: "https://www.linkedin.com/in/alif-naywa-azzikra/", label: "LinkedIn" },
+    { icon: <FaLinkedin size={20} />, href: "https://www.linkedin.com/in/alifnaywa/", label: "LinkedIn" },
     { icon: <SiGmail size={20} />, href: "mailto:naywaalif@gmail.com", label: "Email" },
     { icon: <FaGithub size={20} />, href: "https://github.com/alifnay", label: "GitHub" },
 ];
