@@ -14,9 +14,9 @@ const PROJECTS = [
     },
     {
         title: "SmartCorn",
-        category: "Web Development",
-        description: "IoT-based website to monitor corn field conditions including humidity and soil quality.",
-        techStack: ["React", "Laravel", "IoT MQTT"],
+        category: "AI-Powered Web App",
+        description: "Intelligent plant disease detection system using Convolutional Neural Networks (CNN) to diagnose corn leaf health from images.",
+        techStack: ["React", "CNN", "TensorFlow", "Tailwind"],
         image: "/smartcorn.png",
         githubLink: "https://github.com/alifnay",
         demoLink: "#"
