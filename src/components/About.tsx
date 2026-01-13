@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGraduationCap, FaBriefcase, FaBrain } from "react-icons/fa";
+import { FaGraduationCap, FaBrain } from "react-icons/fa";
 
 const About = () => {
     const HIGHLIGHTS = [
@@ -8,12 +8,6 @@ const About = () => {
             title: "Education",
             subtitle: "Information Technology",
             desc: "Universitas Negeri Yogyakarta"
-        },
-        {
-            icon: <FaBriefcase size={20} />,
-            title: "Experience",
-            subtitle: "Internship",
-            desc: "Telkom Indonesia (PRQ Division)"
         },
         {
             icon: <FaBrain size={20} />,

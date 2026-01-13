@@ -4,12 +4,13 @@ import Skills from './components/Skills.js';
 import About from './components/About.js';
 import Works from './components/Works.js';
 import Footer from './components/Footer.js';
+import Journey from "./components/Journey";
 
 function App() {
 
     return (
         <>
-            <div className="relative w-full text-gray-800 dark:text-gray-200 font-sans overflow-x-hidden selection:bg-[#FD6F00] selection:text-white">
+            <div className="relative w-full text-gray-800 dark:text-gray-200 font-sans overflow-x-hidden selection:bg-[#FD6F00] selection:text-white bg-gray-50/50 dark:bg-[#0a0a0a]">
                 
                 {/* --- GLOBAL BACKGROUND --- */}
                 <div className="fixed inset-0 -z-50 min-h-screen w-full bg-white dark:bg-[#050505] transition-colors duration-300">
@@ -23,8 +24,9 @@ function App() {
                 {/* --- CONTENT --- */}
                 <Navbar />
                 <Landing />
-                <Skills />
                 <About />
+                <Skills />
+                <Journey />
                 <Works />
                 <Footer />
             </div>
