@@ -86,7 +86,7 @@ const Landing = () => {
                                 Contact Me
                             </button>
                         </a>
-                        <a href="/files/CV_AlifNaywa.pdf" download="CV_AlifNaywa.pdf">
+                        <a href="/files/CV_ATS_Alif Naywa.pdf" download="CV_AlifNaywa.pdf">
                             <button className="w-full sm:w-auto bg-transparent border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 h-12 px-8 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300">
                                 View Resume
                             </button>
@@ -115,9 +115,9 @@ const Landing = () => {
 
                         {/* Image */}
                         <img 
-                            src="/profile-image.png" 
+                            src="/profile-img.png" 
                             alt="Alif Naywa" 
-                            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" 
+                            className="w-full h-full object-cover transition-all duration-500" 
                         />
                     </motion.div>
                 </motion.div>

@@ -63,7 +63,7 @@ const About = () => {
                                 <img 
                                     src="/about-me.png" 
                                     alt="About Alif Naywa" 
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-105" 
+                                    className="w-full h-full object-cover transition-all duration-500 transform hover:scale-105" 
                                 />
                                 
                                 {/* Overlay Gradient */}
