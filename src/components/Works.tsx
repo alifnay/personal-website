@@ -31,7 +31,7 @@ const PROJECTS = [
     {
         title: "E-Commerce Design",
         category: "UI/UX Design",
-        description: "Modern and user-friendly interface design for a fashion marketplace application.",
+        description: "Modern and user-friendly interface design for a marketplace application.",
         techStack: ["Figma", "Prototyping", "User Research"],
         image: "/ecommerce.png",
         githubLink: "https://github.com/alifnay"
@@ -43,6 +43,14 @@ const PROJECTS = [
         techStack: ["Python", "Streamlit", "Scikit-Learn"],
         image: "/twt-sentiment.png",
         githubLink: "https://github.com/alifnay/text_sentiment"
+    },
+        {
+        title: "Task Management",
+        category: "Web Application",
+        description: "A Website app to help users organize and prioritize their tasks effectively.",
+        techStack: ["PHP", "Laravel", "MySQL"],
+        image: "/task-management.png",
+        githubLink: "https://github.com/alifnay"
     },
 ];
 
